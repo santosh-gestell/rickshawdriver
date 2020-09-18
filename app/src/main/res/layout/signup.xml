@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+<LinearLayout
+
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+        </LinearLayout>
+
+
+<ScrollView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:fadeScrollbars="true"
+android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+        <!--  Header  Starts-->
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+            <!-- Logo Start-->
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:scaleType="center"
+                android:src="@drawable/signup_banner" />
+
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+        <!-- Registration Form -->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginTop="-10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!-- first Name Label -->
+
+            <!--<TextView
+                android:text="asdasdasd"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />-->
+            <EditText
+                android:fontFamily="serif"
+                android:id="@+id/edt_firstname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/colorBlack"
+                android:padding="10dip"
+                android:enabled="true"
+                android:maxLength="25"
+                android:textSize="14sp"
+                android:layout_marginTop="5dip"
+                android:inputType="text"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/name"
+                android:singleLine="true" />
+            <!-- Last Name Label -->
+
+
+            <EditText
+                android:fontFamily="serif"
+                android:id="@+id/edt_mob"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/colorBlack"
+                android:padding="10dip"
+                android:layout_marginTop="5dip"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="14sp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/mobilenumber"
+                android:singleLine="true" />
+            <!--  Email Label -->
+
+
+            <!--<EditText
+                android:fontFamily="serif"
+                android:id="@+id/edt_loc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="text"
+                android:layout_marginTop="5dip"
+                android:padding="10dip"
+                android:textSize="14sp"
+                android:hint="Location"
+                android:singleLine="true" />-->
+            <LinearLayout
+                android:id="@+id/lSpinner"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Spinner
+
+                android:id="@+id/spinner_loc"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+
+                />
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                 </LinearLayout>
+            android:background="@drawable/gradient_spinner"
+            style="@style/spinner_style"
+                android:layout_weight="1"
+
+
+
+            <LinearLayout
+                android:weightSum="5"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/edt_cityNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/colorBlack"
+                android:inputType="text"
+                android:ems="5"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dip"
+                android:paddingLeft="10dip"
+                android:paddingBottom="10dip"
+                android:paddingRight="10dip"
+                android:textSize="14sp"
+                android:hint="MH12"
+                android:singleLine="true" />
+                android:background="@drawable/rounded_edittext"
+                <EditText
+                    android:layout_weight="4"
+                    android:fontFamily="serif"
+                    android:id="@+id/edt_vehicleNumber"
+                    android:maxLength="6"
+                    android:textAllCaps="true"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/hintColor"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="textCapCharacters"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingBottom="10dip"
+                    android:textSize="14sp"
+                    android:hint="@string/vehicleno"
+                    android:singleLine="true" />
+                android:padding="10dip"
+                android:background="@drawable/rounded_edittext"
+                </LinearLayout>
+
+            <!--  contact Label -->
+
+
+            <EditText
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:id="@+id/reg_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dip"
+                android:hint="Invitation Code"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:maxLength="10"
+                android:layout_marginTop="5dip"
+                android:singleLine="true" />
+            <!--  address Label -->
+
+
+
+
+
+            <EditText
+                android:textSize="14sp"
+                android:fontFamily="serif"
+                android:id="@+id/edt_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/rounded_edittext"
+                android:password="true"
+                android:inputType="textPassword"
+                android:hint="@string/password1"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/colorBlack"
+                android:padding="10dip"
+                android:singleLine="true" />
+            <!-- Confirmed Password Label -->
+
+
+            <EditText
+
+                android:textSize="14sp"
+                android:id="@+id/edt_confirmedpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/confirm_password"
+                android:padding="10dip"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/colorBlack"
+                android:password="true"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <EditText
+
+                android:textSize="14sp"
+                android:fontFamily="serif"
+                android:maxLength="12"
+                android:id="@+id/edt_referalCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/referalCode"
+                android:padding="10dip"
+                android:textColorHint="@color/hintColor"
+                android:textColor="@color/colorBlack"
+                android:inputType="text"
+                android:singleLine="true" />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:padding="5dip"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <CheckBox
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkTerms"
+                />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txtTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accepttermsignup"
+                    android:textColor="@color/colorBlack"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGreen"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlNext"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                   android:padding="10dip"
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/imageView1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@mipmap/ic_whitearrow" />
+
+
+
+            <!-- Register Button -->
+           <!-- <Button
+                android:id="@+id/btnNext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/colorGreen"
+                android:text="Next"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textColor="#ffffff" />
+                android:drawableRight="@mipmap/ic_whitearrow"
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_black_arrow" />-->
+
+            <!-- Link to Login Screen -->
+</RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:visibility="gone"
+                android:id="@+id/btnContinue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/colorGreen"
+                android:text="@string/next"
+                android:paddingLeft="15dp"
+                android:gravity="left|center"
+                android:drawablePadding="50dip"
+                android:padding="5dp"
+                android:drawableRight="@mipmap/ic_whitearrow"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <!-- Registration Form Ends -->
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

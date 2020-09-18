@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+   >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+           >
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/profile"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7" />
+            android:scaleType="fitCenter"
+            <androidx.appcompat.widget.Toolbar
+
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--<include layout="@layout/content_scrolling" />-->
+    <androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/profile_fragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/txtdriver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rahul Patel"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                />
+
+                    <LinearLayout
+                        android:id="@+id/kk"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:weightSum="2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                        <TextView
+                            android:fontFamily="serif"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mytrips"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_marginTop="10dp"
+                            />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorGrey"  />
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:id="@+id/txtTripCount"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="10dp"
+                    />
+                    </LinearLayout>
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:fontFamily="serif"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/todaysEarning"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_marginTop="10dp"
+                                />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorGrey" />
+                            <TextView
+                                android:fontFamily="serif"
+                                android:id="@+id/txtTotalEarning"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rs 500"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_marginTop="10dp"
+                                />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+   <!-- <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@android:drawable/ic_dialog_info" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

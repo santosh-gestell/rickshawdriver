@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
+    >
+   <!-- <LinearLayout
+
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>-->
+
+
+
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/rrr"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_marginBottom="50dp"
+            android:id="@+id/map_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        <FrameLayout
+            android:id="@+id/frame1"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            android:layout_marginTop="50dp"
+            <LinearLayout
+            android:id="@+id/linear_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <fragment
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/place_autocomplete_fragment"
+                />
+
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/imgMenuBar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/menu_bar" />
+
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/imgNavigation"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_navigation_arrow"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/navigation"
+                android:id="@+id/txtnavigation"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="bottom"
+                />
+
+            <Button
+                android:visibility="gone"
+                android:fontFamily="serif"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/navigation"
+                android:id="@+id/btnnavigation"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:drawableRight="@mipmap/ic_navigation_arrow"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="bottom"
+                />
+
+            <Button
+                android:id="@+id/buttonQueue_newFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:text="@string/button_que"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/que_button"/>
+
+            <!--<FrameLayout
+
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            </FrameLayout>-->
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:id="@+id/linear_placefragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <!--<android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">-->
+           <!-- <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">-->
+
+                <fragment android:id="@+id/place_autocomplete_fragment"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/btnSpeak"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_btn_speak_now"
+                    />
+
+                <!--</android.support.v7.widget.CardView>-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+            android:layout_margin="20dp"
+
+
+            <include layout="@layout/map_naviagation_layout"
+                />
+
+
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+
+
+
+            <View
+                android:id="@+id/customView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent" />
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorWhite"
+                android:padding="10dp"
+                android:elevation="2dp"
+                android:id="@+id/progressBar_linear"
+                >
+                <TextView
+                    android:fontFamily="serif"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gettiglocation"
+                    />
+
+            <ProgressBar
+                android:layout_marginLeft="5dp"
+                android:id="@+id/progress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/AppTheme.GreenAccent"
+                />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        </RelativeLayout>
+
+
+
+    <LinearLayout
+
+        android:background="@android:color/transparent"
+        android:layout_marginRight="5dp"
+        android:weightSum="2"
+        android:id="@+id/linearbtn"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_weight="1"
+            android:animateLayoutChanges="true"
+            android:id="@+id/btnfixRoute"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            android:fontFamily="serif"
+            android:background="@color/colorGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fixedrout"
+
+            />
+
+
+
+        <!--<RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">-->
+
+        <Button
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:animateLayoutChanges="true"
+            android:id="@+id/btndynamicRoute"
+            android:fontFamily="serif"
+            android:textColor="@color/colorBlack"
+            android:background="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dynamicLocation"
+            android:gravity="center"
+            />
+        <!--</RelativeLayout>-->
+
+
+
+
+    </LinearLayout>
+        android:background="@android:color/transparent"
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@color/colorWhite"
+            android:id="@+id/linearBtn"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <Button
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:animateLayoutChanges="true"
+                android:id="@+id/btnEndTrip"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:fontFamily="serif"
+                android:background="@color/colorGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/EndTrip"
+
+                />
+
+            <Button
+                android:layout_marginLeft="4dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:animateLayoutChanges="true"
+                android:id="@+id/btnResend"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:fontFamily="serif"
+                android:background="@color/colorGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/resendOtp"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:weightSum="3"
+            android:background="@color/colorWhite"
+            android:id="@+id/linearOnlineBtn"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <Button
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:animateLayoutChanges="true"
+                android:id="@+id/btnStartOnlineTrip"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:fontFamily="serif"
+                android:background="@color/colorGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/startRide"
+
+                />
+
+            <Button
+                android:layout_marginLeft="4dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:animateLayoutChanges="true"
+                android:id="@+id/btnOnlineCancel"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:fontFamily="serif"
+                android:background="@color/colorGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelRide"
+
+                />
+
+            <Button
+                android:layout_marginLeft="4dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:animateLayoutChanges="true"
+                android:id="@+id/btnCall"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:fontFamily="serif"
+                android:background="@color/colorGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/call"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        android:gravity="center"
+        android:id="@+id/bottom_sheet"
+        android:background="@color/colorYellow"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:background="@color/colorYellow"
+            android:layout_marginRight="5dp"
+            android:id="@+id/linear"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/colorYellow"
+                android:layout_marginRight="5dp"
+                android:id="@+id/linear1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/kilometer"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtKm"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:text=""/>
+
+                </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrey"
+                />
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/colorYellow"
+                android:layout_marginRight="5dp"
+                android:id="@+id/linear2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/fare"/>
+
+            <TextView
+                android:id="@+id/txtFare"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=""/>
+
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@android:color/transparent"
+            android:id="@+id/linearbtns"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:foreground="?attr/selectableItemBackground"
+
+                android:animateLayoutChanges="true"
+                android:id="@+id/btnRide"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:fontFamily="serif"
+                android:background="#21e208"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_rickshw"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--
+</LinearLayout>-->
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

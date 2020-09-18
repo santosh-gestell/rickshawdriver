@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "51429963617",
+    "firebase_url": "https://rickshaw-app-1537201168050.firebaseio.com",
+    "project_id": "rickshaw-app-1537201168050",
+    "storage_bucket": "rickshaw-app-1537201168050.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51429963617:android:b1246526270f7570",
+        "android_client_info": {
+          "package_name": "com.tretakalp.Rikshaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51429963617-s3d5l2sphkt2o0qg95updiqamjear1mf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs-hpuLK0Q8h9khnf2jAV5db1H6rL-2o0"
+        },
+        {
+          "current_key": "AIzaSyBs-hpuLK0Q8h9khnf2jAV5db1H6rL-2o0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

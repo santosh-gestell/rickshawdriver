@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rickshaw Driver App:- App developed by Rickshaw Driver for Rickshaw Drivers."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/txt"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none"
+                android:fillViewport="true">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:fontFamily="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RickshawApp is not just a mobile based application of booking rides but a movement to empower
+Auto Rickshaw drivers in this competition era. In Pune, daily approximately 5.0 Lakh people travel by
+Public transport but only 50,000 of them uses Mobile based application for booking of Cab."
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                    <TextView
+                        android:fontFamily="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="We have nearly 60,000 Auto Rickshaw Drivers in Pune. This app is a Technology provider for those
+60.000 Auto Rickshaws in the city."
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:fontFamily="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Want to give us a try at Rickshawapp? Download the app, complete the fast signup process and book
+your first ride for passenger. Take a feedback from Passenger and ONLY IF YOU and PASSENGER LIKE IT
+refer to a friend by using your referral code. Ask your friend to sign up with that code to get exciting
+referral bonus."
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:fontFamily="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow these easy steps to book a Rickshaw for customer -"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                    <TextView
+                        android:fontFamily="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="For instant ride:"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:fontFamily="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="When passenger comes in >> Set your destination by typing or by Voice Module>> Enter the mobile
+number of Passenger >> Confirm the Ride Fare >> Passenger will receive a SMS >> Follow the
+Navigation route >> Confirm the bill collection (Either by Cash or Online) >> Stop the ride."
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:fontFamily="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Note: If Passenger is not comfortable at the beginning use Your Meter and compare the Fare in App
+and in Meter at the end of trip and if “Fare in App is more than Meter fare Ask Passenger to
+Complaint against Rickshawapp in RTO”"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:fontFamily="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More benefits of using Rickshawapp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+                    <TextView
+                        android:fontFamily="serif"
+                        android:id="@+id/mytxt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Passenger can get multiple ways to pay:  Passenger can Pay for your trips in cash or via multiple cashless options like Debit card, Credit card, UPI, 50+ Netbanking, 17+ Mobile wallets etc"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+
+                      </LinearLayout>
+
+                    <TextView
+                        android:fontFamily="serif"
+                        android:id="@+id/mytxt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Know fares and ride features	: Check fares and various features of a ride category before booking"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:fontFamily="serif"
+                        android:id="@+id/mytxt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Travel with safety:Passenger can share your travel plan with family and friends so they can track
+your vehicle and know passenger is safe"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:fontFamily="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The support you need"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:fontFamily="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take the fear out of your first trips — you’ll learn how to use the app when you first open it.
+Get the help you need with an easy in-app tool to report issues or ask questions."
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:fontFamily="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="15sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        />
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

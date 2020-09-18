@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:weightSum="5"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/totalAmount"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorBlack"
+            />
+
+
+        <TextView
+            android:fontFamily="serif"
+            android:id="@+id/txtTotalAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 35"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorRed"
+            />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+           android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="serif"
+                android:gravity="right|center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/totaldistance"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                />
+
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0 KM"
+                android:id="@+id/txtTotalDist"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textColor="@color/colorBlack"
+                />
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="15dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="serif"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/discount"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                />
+
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="₹ 0"
+                android:id="@+id/txtDiscount"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                />
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorDarkYellow"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paybleamount"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                />
+
+            <TextView
+                android:fontFamily="serif"
+                android:id="@+id/txtPayAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 35"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                />
+
+            </LinearLayout>
+
+
+        <Button
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:id="@+id/btnContinue"
+            android:text="Continue"
+            android:textColor="@color/colorWhite"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:id="@+id/rlOnline"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGreen"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/imageView1"
+                android:layout_marginLeft="8dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/globe" />
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/online"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+
+
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:id="@+id/rlCash"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGreen"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/imageView2"
+                android:layout_marginLeft="8dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/cash" />
+
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:padding="10dip"
+
+               />
+
+
+
+
+
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>

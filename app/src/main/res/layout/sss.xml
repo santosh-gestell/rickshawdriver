@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:id="@+id/l2"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar1" />
+
+    <!--<RelativeLayout
+        android:id="@+id/rltoolbar"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:padding="10dip"
+            />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imgBackArrow"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/back_arrow" />
+    </RelativeLayout>-->
+
+    <LinearLayout
+
+        android:elevation="5dp"
+        android:padding="5dp"
+        android:id="@+id/l22"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imgBackArrow"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/back_arrow" />
+
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/map_line3"
+
+            />
+
+        <LinearLayout
+
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                android:weightSum="2"
+                <EditText
+                    android:fontFamily="serif"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/edtsource"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Source"
+                    android:singleLine="true"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="true"
+                    android:focusable="false"
+                    />
+                android:background="@drawable/rounded_edittext"
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey"
+                />
+
+            <LinearLayout
+
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <LinearLayout
+                    android:layout_weight="4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+                    <EditText
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:layout_weight="1"
+                        android:id="@+id/edtDest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Destination"
+                        android:focusable="false"
+                        />
+
+                    <AutoCompleteTextView
+                        android:fontFamily="serif"
+                        android:layout_weight="1"
+                        android:id="@+id/autoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:hint="Enter Destination"
+                        android:cursorVisible="false"
+                        android:focusableInTouchMode="true"
+                        android:focusable="false"
+                        />
+                    <!-- <fragment
+                         android:layout_weight="1"
+                         android:id="@+id/place_autocomplete_fragment1"
+                         android:name="com.google.android.gms.location.places.ui.SupportPlaceAutocompleteFragment"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content" />-->
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

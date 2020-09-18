@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/plzuploaddoc"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view1"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                card_view:cardBackgroundColor="@color/colorBlack"
+               >
+
+            <RelativeLayout
+                android:id="@+id/rdl"
+                android:background="@color/colorWhite"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/drivinglicense"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:textSize="14sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_dl"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_black_arrow"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                android:layout_marginTop="5dp"
+               >
+            <RelativeLayout
+                android:id="@+id/rAadhar"
+                android:background="@color/colorWhite"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aadharcard"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:textSize="14sp"
+                    />
+                <ImageView
+                    android:id="@+id/img_adharNo"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_black_arrow"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+
+            </RelativeLayout>
+</androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                android:layout_marginTop="5dp"
+              >
+
+            <RelativeLayout
+                android:id="@+id/rProfile"
+                android:background="@color/colorWhite"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profilepic"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:textSize="14sp"
+                    />
+                <ImageView
+                    android:id="@+id/img_profilepic"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_black_arrow"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+
+            </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view7"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rbank"
+                    android:background="@color/colorWhite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:fontFamily="serif"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bankdetails"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:textSize="14sp"
+                        />
+                    <ImageView
+                        android:id="@+id/img_bankpic"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/ic_black_arrow"
+                        android:layout_alignParentRight="true"
+                        />
+
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/plzuploadpersonldoc"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                >
+
+            <RelativeLayout
+                android:id="@+id/rVehiclePermit"
+                android:background="@color/colorWhite"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehiclepermit"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:textSize="14sp"
+                    />
+                <ImageView
+                    android:id="@+id/img_vehiclepermit"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_black_arrow"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+
+            </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/card_view5"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                android:layout_marginTop="5dp"
+               >
+
+            <RelativeLayout
+                android:id="@+id/rBadge"
+                android:background="@color/colorWhite"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Badge Number"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:textSize="14sp"
+                    />
+                <ImageView
+                    android:id="@+id/img_badgeNumber"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_black_arrow"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+
+            </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view6"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                android:layout_marginTop="5dp"
+               >
+            <RelativeLayout
+                android:id="@+id/rVehicleInsurnce"
+                android:background="@color/colorWhite"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicleinsurnaceno"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:textSize="14sp"
+                    />
+                <ImageView
+                    android:id="@+id/img_vehicleInsurunce"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_black_arrow"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+
+            </RelativeLayout>
+</androidx.cardview.widget.CardView>
+            <!--<Button
+                android:id="@+id/btndriver"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/colorWhite"
+                android:text="Driving License"
+                android:drawablePadding="50dip"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorGrey"/>
+
+
+            <Button
+                android:id="@+id/btndriver1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/colorWhite"
+                android:text="Aadhar Card"
+                android:drawablePadding="50dip"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorGrey" />
+
+
+            <Button
+                android:id="@+id/btndriver12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/colorWhite"
+                android:text="Profile Photo"
+                android:drawablePadding="50dip"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorGrey" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Upload Your Vehicle Document"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                />
+
+            <Button
+                android:id="@+id/btndriver4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/colorWhite"
+                android:text="Vehicle Permit"
+                android:drawablePadding="50dip"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorGrey" />
+
+            <Button
+                android:id="@+id/btndriver5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/colorWhite"
+                android:text="Badge Number"
+                android:drawablePadding="50dip"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorGrey" />
+
+
+            <Button
+                android:id="@+id/btndriver6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/colorWhite"
+                android:text="Vehicle Insurance"
+                android:drawablePadding="50dip"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorGrey" />-->
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:visibility="gone"
+                android:id="@+id/btnContinue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/colorGreen"
+                android:text="Continue"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:drawablePadding="50dip"
+                android:padding="5dp"
+                android:textColor="#ffffff" />
+
+            </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,335 @@
+<resources>
+    <string name="app_name">Rickshaw</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_profile">प्रोफाइल</string>
+    <string name="nav_Home">होम</string>
+    <string name="nav_tripshistory">ट्रिप इतिहास</string>
+    <string name="nav_Earnings">कमाई</string>
+    <string name="nav_PaymentDetails">चालू खाते तपशील</string>
+    <string name="nav_ReferEarn">रेफर आणि कमवा</string>
+    <string name="nav_AccountSetting">खाते सेटिंग्ज</string>
+    <string name="nav_incentiveAndNoti">प्रोत्साहन आणि अधिसूचना</string>
+    <string name="nav_report">समस्या नोंदवा</string>
+    <string name="nav_about_us">अँप बद्दल</string>
+    <string name="nav_help">मदत</string>
+    <string name="nav_signout">साइन आउट</string>
+    <string name="nav_legal">कायदेशीर बाबी</string>
+    <string name="api_key">AIzaSyBgxV8HZG2nmFXHb5iYHHxfeJJCsFGZqPA</string>
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>होम</item>
+        <item>प्रोफाइल</item>
+        <item>ट्रिप इतिहास</item>
+        <item>कमाई</item>
+        <item>चालू खाते तपशील</item>
+        <item>रेफर आणि कमवा</item>
+        <item>खाते सेटिंग्ज</item>
+        <item>प्रोत्साहन आणि अधिसूचना</item>
+        <item>समस्या नोंदवा</item>
+        <item>अँप बद्दल</item>
+        <item>मदत</item>
+        <item>साइन आउट</item>
+        <item>कायदेशीर बाबी</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="legal">कायदेशीर</string>
+
+    <string name="nameh">नाम</string>
+    <string name="locationh">स्थान</string>
+    <string name="mobileNumberh">मोबाइल नंबर</string>
+    <string name="passwordh">पासवर्ड</string>
+    <string name="confpasswordh">पासवर्ड की पुष्टि कीजिये</string>
+
+    <string name="noInternet">
+        इंटरनेट कनेक्शन नाही</string>
+    <string name="noGps">कृपया, आपल्या जीपीएस चालू करा</string>
+    <string name="otp">कृपया, ओटीपी नंबर प्रविष्ट करा</string>
+    <string name="cantFindLoc">आपले वर्तमान स्थान सापडत नाही</string>
+    <string name="cantFindlatlong">स्थान शोधू शकत नाही</string>
+    <string name="comingsoon">
+लवकरच लॉन्चिंग!</string>
+    <string name="clicktoadd">छायाचित्र जोडण्यासाठी क्लिक करा</string>
+    <string name="selectLang">कृपया भाषा निवडा</string>
+    <string name="selectedLang">
+भाषा निवडली</string>
+    <string name="selectImg">कृपया प्रतिमा निवडा</string>
+    <string name="mobileno">मोबाइल नंबर</string>
+    <string name="password">पासवर्ड</string>
+    <string name="LOGIN">लॉगिन</string>
+    <string name="signUp">  साइन अप</string>
+    <string name="donthavaccount">खाते साइन अप नाही</string>
+    <string name="name">नाव</string>
+    <string name="mobilenumber">मोबाइल नंबर</string>
+    <string name="vehicleno">वाहन क्रमांक</string>
+    <string name="password1">पासवर्ड</string>
+    <string name="confirm_password">पासवर्डची पुष्टी करा</string>
+    <string name="accepttermsignup">अटी आणि नियम स्वीकार करा </string>
+    <string name="next">पुढे</string>
+    <string name="plzuploaddoc">कृपया आपले वैयक्तिक दस्तऐवज अपलोड करा</string>
+    <string name="plzuploadpersonldoc">कृपया आपले वाहन दस्तऐवज अपलोड करा</string>
+    <string name="drivinglicense">चालक परवाना</string>
+    <string name="aadharcard">तंदुरुस्ती प्रमाणपत्र</string>
+    <string name="profilepic">प्रोफाइल फोटो</string>
+    <string name="bankdetails">बँक तपशील</string>
+    <string name="vehiclepermit">वाहन परवाना</string>
+    <string name="vehicleinsurnaceno">
+वाहन विमा</string>
+    <string name="cancel">रद्द करा</string>
+    <string name="continue1">सुरू</string>
+    <string name="fixedrout">निश्चित मार्ग</string>
+    <string name="plzacceptterms">
+कृपया अटी आणि नियम स्वीकार करा</string>
+    <string name="dynamicLocation">अनिश्चित मार्ग</string>
+    <string name="enter_destination">
+स्थान प्रविष्ट करा</string>
+    <string name="kilometer">किलोमीटर</string>
+    <string name="fare">भाडेे</string>
+    <string name="confirm_rickshw">रिक्षाची पुष्टी करा</string>
+    <string name="doyousignout">आपण साइन आउट करू इच्छिता?</string>
+    <string name="exit">बाहेर पडा</string>
+    <string name="doyouuwanttoexit">तुम्हाला बाहेर पडायचे आहे का?</string>
+    <string name="yes">हो</string>
+    <string name="no">
+नाही</string>
+    <string name="documents">कागदपत्रे</string>
+    <string name="languageSetting">भाषा सेटिंग</string>
+    <string name="sendyourinvitecode">
+मित्रांना आपला निमंत्रण कोड पाठवा</string>
+    <string name="shareyourinvitecode_btn">आपला निमंत्रण कोड सामायिक करा</string>
+    <string name="yourinvitecode">तुमचा निमंत्रण कोड</string>
+    <string name="makeupto_terms">आपण आमंत्रित केलेल्या प्रत्येक नवीन ड्रायव्हरसाठी ₹ 50 मिळवा . अटी लागू</string>
+
+    <string name="gettingyourlocation">आपले स्थान मिळवत आहे ...</string>
+    <string name="termsandcondition">नियम आणि अटी</string>
+
+    <string name="loging_msg">लॉगिंग...</string>
+    <string name="networkproblem">नेटवर्क समस्या, कृपया पुन्हा प्रयत्न करा</string>
+    <string name="grant">Grant</string>
+    <string name="mytrips">माझे ट्रिप</string>
+    <string name="todaysEarning">आजची कमाई</string>
+    <string name="editprofile">प्रोफाईल संपादित करा</string>
+    <string name="changepass">पासवर्ड बदला</string>
+    <string name="fetchingdata">प्रोफाइल डेटा आणत आहे ...</string>
+    <string name="updateprofile">प्रोफाइल  डेटा अपडेट करत आहे...</string>
+    <string name="loading">लोडींग  होत  आहे ...</string>
+    <string name="drivinglicenseNumber">परवाना क्रमांक</string>
+    <string name="aadharcardNumber">तंदुरुस्ती प्रमाणपत्र क्रमांक</string>
+    <string name="vehiclepermitNumber">वाहन परमिट नंबर</string>
+    <string name="vehicleinsurnacenumber">वाहन विमा क्रमांक</string>
+    <string name="makesuerelicense">सुनिश्चित करा की परवाना प्रतिमा वाचनीय आहे</string>
+    <string name="makesureaadhar">तंदुरुस्ती प्रमाणपत्र प्रतिमा वाचनीय आहे याची खात्री करा</string>
+    <string name="makesurevehiper">वाहन परमिट नंबरची प्रतिमा वाचनीय असल्याचे निश्चित करा</string>
+    <string name="makesurevehiinsu">खात्री करा वाहन विमा क्रमांक प्रतिमा वाचनीय आहे</string>
+    <string name="takepicvi">आपल्या वाहन विमा नंबरचा फोटो घ्या</string>
+    <string name="takepicvp">आपल्या वाहन परमिट नंबरचा एक फोटो घ्या</string>
+    <string name="takepicac">आपला आरोग्य विमा फोटो घ्या</string>
+    <string name="takepicdl">आपल्या ड्रायव्हिंग परवान्याचा फोटो घ्या</string>
+    <string name="plzenterdl">कृपया, ड्रायव्हिंग परवाना क्रमांक प्रविष्ट करा</string>
+    <string name="plzenterdlExpiryDate">कृपया, समाप्ती तारीख प्रविष्ट करा</string>
+    <string name="plzentervi">कृपया वाहन विमा क्रमांक प्रविष्ट करा</string>
+    <string name="plzentervp">कृपया वाहन परमिट क्रमांक प्रविष्ट करा</string>
+    <string name="plzenterac">कृपया तंदुरुस्ती प्रमाणपत्र क्रमांक प्रविष्ट करा</string>
+    <string name="choosefiletoupload">अपलोड करण्यासाठी फाइल निवडा ..</string>
+    <string name="takephoto">फोटो घ्या</string>
+    <string name="choosefromgallary">गॅलरीमधून निवडा</string>
+    <string name="addphoto">फोटो जोडा!</string>
+    <string name="Uploading">अपलोड करीत आहे...</string>
+
+    <string name="retake">पुन्हा घ्या</string>
+    <string name="save">जतन करा</string>
+    <string name="accountnumber">खाते क्रमांक</string>
+    <string name="makesurebankdetails">खात्री करा बँक तपशील वाचनीय आहे</string>
+    <string name="takephotobankacc">आपल्या पासबुकचा  / रद्द केलेला चेक चा फोटो घ्या</string>
+    <string name="plzenterbankac">कृपया बँक खाते क्रमांक एंटर करा</string>
+    <string name="plzenterifsc">कृपया आयएफएससी कोड प्रविष्ट करा</string>
+    <string name="uploading">अपलोड करीत आहे...</string>
+    <string name="uploadingImage">फोटो अपलोड करीत आहे...</string>
+    <string name="ifsccode">आयएफएससी कोड</string>
+    <string name="takeprofilephoto">प्रोफाइल फोटो घ्या</string>
+
+
+    <string name="share_using">share</string>
+    <string name="navigation">नेव्हीगेशन</string>
+    <string name="update_application">अपडेटेड अँप्लिकेशन  उपलब्ध आहे!</string>
+    <string name="update_app_msg">हे Rickshaw application जुने आहे. कृपया Play Store मधून नवीन अँप्लिकेशन इन्स्टॉल करा</string>
+    <string name="Update">अपडेट</string>
+    <string name="tripIdTitle">ट्रिप आयडी</string>
+    <string name="cash">रोख</string>
+    <string name="online">ऑनलाइन</string>
+    <string name="bill_details">बिल तपशील</string>
+    <string name="ridecharges">राइड चार्ज</string>
+    <string name="fees">शुल्क</string>
+    <string name="discount_amount">सवलत रक्कम</string>
+    <string name="totalbill">एकूण बिल</string>
+    <string name="payment">पेमेंट</string>
+    <string name="KMS">किमी</string>
+    <string name="resendOtp">ओटीपी पुन्हा पाठवा</string>
+    <string name="EndTrip">प्रवास संपवा</string>
+    <string name="customerdetail">ग्राहक तपशील</string>
+    <string name="startRide">राइड प्रारंभ करा</string>
+    <string name="entermobileno">मोबाइल नंबर प्रविष्ट करा</string>
+    <string name="verifyotp">व्हेरिफाय ओटीपी</string>
+    <string name="enterotpcode">आपला ओटीपी कोड प्रविष्ट करा</string>
+    <string name="submit">सबमिट करा</string>
+    <string name="oldpassword">जुना पासवर्ड *</string>
+    <string name="newpassword">नवीन पासवर्ड *</string>
+    <string name="reenterpassword">पासवर्ड पुन्हा भरा *</string>
+    <string name="change">बदला</string>
+    <string name="passowrdisnotmatching">पासवर्ड जुळत नाही</string>
+    <string name="enterpasswordshould">प्रविष्ट केलेला संकेतशब्द 8 वर्णांपेक्षा अधिक असावा</string>
+    <string name="changepassword_title">पासवर्ड बदला</string>
+    <string name="pleasefillfield">कृपया सर्व फील्ड भरा</string>
+    <string name="pleaseenteroldpass">कृपया जुना पासवर्ड प्रविष्ट करा</string>
+    <string name="pleaseenternewpass">कृपया नवीन पासवर्ड प्रविष्ट करा</string>
+    <string name="pleaseenterrenter">पासवर्ड पुन्हा भरा</string>
+    <string name="areuyousurechangepass">आपणास खात्री आहे की आपण पासवर्ड बदलू इच्छिता?</string>
+    <string name="No">नाही</string>
+    <string name="newpassnotmatchreenterpass">नवीन पासवर्ड रिएंटर  पासवर्डसह जुळत नाही</string>
+    <string name="changingpassword">पासवर्ड बदलत आहे ......</string>
+
+    <string name="resendingOtp">ओटीपी पाठवत आहे....</string>
+    <string name="doyouwanttoresendotp">तुम्हाला ओटीपी पुन्हा पाठवायचा आहे का?</string>
+
+    <string name="ridesummary_title">प्रवास सारांश</string>
+    <string name="totalAmount">एकूण रक्कम</string>
+    <string name="totaldistance">एकूण अंतरः</string>
+    <string name="discount">डिस्काउंट: </string>
+    <string name="paybleamount">देय रक्कम</string>
+    <string name="paymentdone">पेमेंट केले</string>
+    <string name="amountpaid">देय रक्कम:</string>
+    <string name="done">पूर्ण झाले</string>
+    <string name="paymentmode">पेमेंट मोड?</string>
+    <string name="pleaseselecetpaymentmode">कृपया तुमचे पेमेंट मोड निवडायचे?</string>
+    <string name="ok">ठीक आहे</string>
+    <string name="makingpaymentpleasewait">पेमेंट करत आहे.. कृपया प्रतीक्षा करा ..</string>
+    <string name="codeversion">vs</string>
+    <string name="trips"> ट्रिप</string>
+
+
+    <string name="pleaseselectcity">कृपया शहर निवडा</string>
+    <string name="pleaseaccepttermsandcondition">कृपया नियम व अटी मान्य करा</string>
+    <string name="gettingOTP">ओटीपी मिळवत आहे ...</string>
+    <string name="verifingotp_load">ओटीपी तपासत आहे ...</string>
+    <string name="signingUp">साइन अप...</string>
+    <string name="mobilenumbershouldbe">मोबाइल नंबर 10 अंकी क्रमांक असावा</string>
+    <string name="enterpassshouldbe">पासवर्ड 8 पेक्षा जास्त अक्षरे असावा</string>
+    <string name="enternameshouldbe">Entered name should be more than 3 characters</string>
+    <string name="pleaseentervalidotp">कृपया वैध ओटीपी प्रविष्ट करा</string>
+
+    <string name="reset">रीसेट करा</string>
+    <string name="pleaseuploaddrivinglicence">कृपया ड्रायव्हिंग परवाना अपलोड करा</string>
+    <string name="thisresetsignupprocess">हे साइन अप प्रक्रिया रीसेट करेल. आपण रीसेट करू इच्छिता?</string>
+    <string name="turnonlocation">जिपीएस चालू करा</string>
+    <string name="rikshappneedyourpermission">रिक्षा अॅपला आपल्या वर्तमान स्थानाची आवश्यकता आहे.</string>
+    <string name="turnongps">जिपीएस चालू करा</string>
+    <string name="referalCode">रेफरल कोड</string>
+    <string name="gettingEarningDetail">कमाईचा तपशील मिळवत आहे ...</string>
+    <string name="notripstoshow">ट्रिप तपशील उपलब्ध नाही </string>
+
+
+
+    <string name="speech_prompt">कृपया जाण्याचे ठिकाण  बोला</string>
+    <string name="speech_not_supported">परत बोला</string>
+    <string name="referAmount">रेफेर रक्कम </string>
+    <string name="refercount">रेफेर रक्कम  तपशील </string>
+    <string name="signIn">साइन इन</string>
+    <string name="Issues">समस्या</string>
+    <string name="usingapplicationhelp">अँप्लिकेशनची मदत</string>
+    <string name="call">कॉल करा</string>
+    <string name="pleasLogin">कृपया, लॉग इन करा</string>
+    <string name="needphonecallpermission">फोन कॉल परवानगी आवश्यक आहे</string>
+    <string name="thisappneedphonecallpermisssion">या अॅपला फोन कॉल परवानगीची आवश्यकता आहे.</string>
+    <string name="gotopermissionsetting">परवानगी देण्यासाठी सेटिंग मध्ये जा .</string>
+    <string name="cancelRide">राइड रद्द करा</string>
+    <string name="doyouwanttocanceltrip">आपण प्रवास रद्द  करू इच्छिता का?</string>
+    <string name="endtriploader">प्रवास  संपत आहे ...</string>
+    <string name="pleaseCompleteyourpendingRide">कृपया प्रथम आपल्या प्रलंबित प्रवास पूर्ण करा.</string>
+
+    <string name="writemsg">एक मेसेज लिहा</string>
+    <string name="queryNo">प्रश्न क्रमांकः</string>
+    <string name="source">सुरवाती स्थान</string>
+    <string name="destination">जाण्याचे  स्थान</string>
+    <string name="reject">रद्द करा</string>
+    <string name="acceptRide">राइड स्वीकारा</string>
+
+    <string name="incomingtrips">
+येणार्या ट्रिप</string>
+    <string name="changingLang">
+भाषा बदलत आहे ...</string>
+    <string name="KM">किमी</string>
+    <string name="yourallnotificationsgetclear">आपण या स्क्रीन वरून  मागे गेला  तेव्हा आपल्या सर्व ट्रिप्स कैन्सल होतील </string>
+    <string name="clearNotification">
+ट्रिप रद्द करायचे?</string>
+
+    <string name="forgetPassword">पासवर्ड विसरला</string>
+    <string name="newpasswordissendonyourmobileno">नवीन पासवर्डसह एक एसएमएस पाठविला गेला आहे</string>
+    <string name="retry">पुन्हा प्रयत्न करा</string>
+    <string name="cancel_reason">कारण</string>
+    <string name="pleaseselectreson">कृपया कारण निवडा.</string>
+    <string name="selectreson">कारण निवडा</string>
+
+    <string name="earningDetails">कमाईचा तपशील *</string>
+    <string name="from">पासून</string>
+    <string name="To">पर्यंत</string>
+    <string name="getData">माहिती मिळवा</string>
+    <string name="cashpayment">रोख पेमेंट</string>
+    <string name="totalpayout">एकूण पेआउट</string>
+    <string name="tripNo">ट्रिप क्रमांक</string>
+    <string name="enteryourquery">आपली प्रश्न प्रविष्ट करा</string>
+    <string name="youdonthaveanyoffer">आपल्याकडे आता कोणत्याही ऑफर नाहीत.</string>
+    <string name="gettiglocation">स्थान मिळवत आहे ...</string>
+    <string name="ihaveanrickshacoupon">माझ्याकडे तुमच्यासाठी रु .50 ची रिक्शा कूपन आहे. माझ्या </string>
+    <string name="toavailthecodeandride"> या रेफरल कोडसह साइन अप करा आणि कूपन मिळविण्यासाठी तसेच  विनामूल्य सवारी करण्यासाठी डाउनलोड करा</string>
+
+
+    <string name="thisappneedcameraandstorage">या अॅपला कॅमेरा आणि स्टोरेज परवानगीची आवश्यकता आहे.</string>
+    <string name="needcameranadstorage">कॅमेरा आणि स्टोरेज परवानगी आवश्यक आहे</string>
+    <string name="clear">साफ करा</string>
+    <string name="pleaseenterquery">कृपया, प्रश्न प्रविष्ट करा</string>
+    <string name="selectperiod">कालावधी निवडा</string>
+    <string name="dateshouldbetwo">निवडलेली तारीख 31 दिवसांपेक्षा कमी असणे आवश्यक आहे</string>
+    <string name="dynamicrideselected">अनिश्चित मार्ग  निवडली आहे</string>
+    <string name="staticrideselected">निश्चित मार्ग  निवडले आहे</string>
+    <string name="keeprickshawappopen">कृपया रिक्षा अॅप उघडा ठेवा</string>
+
+    <string name="opening_balance">प्रारंभिक शिल्लक</string>
+    <string name="totalearning">एकूण कमाई</string>
+    <string name="cashcollect">रोख जमा</string>
+    <string name="totalbalance">एकूण शिल्लक</string>
+    <string name="dayendclosing">दिवस समाप्ती</string>
+
+
+    <string name="thisday">आजचा दिवस</string>
+    <string name="thisweek">हा आठवडा</string>
+    <string name="thismonth">या महिन्यात</string>
+    <string name="yesterday">काल</string>
+    <string name="previweek">मागील आठवडा</string>
+    <string name="prevmonth">मागील महिना</string>
+    <string name="prevyear">मागील वर्ष</string>
+    <string name="lastsevenday">शेवटचे 7 दिवस</string>
+    <string name="lastthirtyday">शेवटचे 30 दिवस</string>
+    <string name="custom">कस्टम</string>
+
+    <string name="topic_two">टॉपिक दुसरा</string>
+    <string name="topic_one">टॉपिक पहिला</string>
+    <string name="amountearned">
+कमाईची रक्कम</string>
+    <string name="referalcount">रेफरल संख्या</string>
+    <string name="totalfees">एकूण शुल्क</string>
+    <string name="totaltrips">एकूण ट्रिप</string>
+    <string name="totalcashcollected">एकत्रित एकूण रोख</string>
+    <string name="senconddateshouldbegreater">दुसरी तारीख पहिल्या  तारखेपेक्षा जास्त असणे आवश्यक आहे</string>
+    <string name="amtpaidtocomp">कंपनीला देय रक्कम</string>
+</resources>
+

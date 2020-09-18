@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorGreen</color>
+    <color name="colorPrimaryDark">@color/colorGrey</color>
+    <color name="colorAccent">@color/colorGrey</color>
+        <color name="colorGreen">#3CB44A</color>
+    <color name="colorYellow">#FACB49</color>
+    <color name="colorDarkYellow">#dc9700</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#969faa</color>
+    <color name="hintColor">@color/colorGrey</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorRed">#C93636</color>
+    <color name="colorTripGrey">#F5F8FA</color>
+    <color name="colorTripBillGrey">#E5E7E9</color>
+    <color name="colorTripPayYellow">#FFBA5C</color>
+    <color name="enabled_color">#000000</color>
+    <color name="disabled_color">#000000</color>
+    <color name="blue_chat_color">#05728f</color>
+    <color name="color_buttonDisable">#AFF3B7</color>
+
+    //testing
+    <color name="color_testing">#01c6fa</color>
+
+</resources>

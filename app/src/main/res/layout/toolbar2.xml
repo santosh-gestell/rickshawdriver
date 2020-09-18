@@ -1,0 +1,20 @@
+<android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_awesome_toolbar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+
+    app:theme="@style/BackArrow"
+   >
+    app:theme="@style/BackArrow"
+    <TextView
+        android:fontFamily="serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:id="@+id/titletool"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+</android.support.v7.widget.Toolbar>

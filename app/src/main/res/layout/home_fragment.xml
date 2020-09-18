@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">-->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
+    >
+    android:fitsSystemWindows="true"
+   <!-- <LinearLayout
+
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>-->
+
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/rrr"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginBottom="50dp"
+            android:id="@+id/map_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:name="com.google.android.gms.location.places.ui.SupportPlaceAutocompleteFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            <fragment
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/place_autocomplete_fragment"
+                />
+
+            <View
+                android:id="@+id/customView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent" />
+
+        </RelativeLayout>
+
+
+
+    <LinearLayout
+
+        android:background="@android:color/transparent"
+        android:layout_marginRight="5dp"
+        android:weightSum="2"
+        android:id="@+id/linearbtn"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_weight="1"
+            android:animateLayoutChanges="true"
+            android:id="@+id/btnfixRoute"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            android:fontFamily="serif"
+            android:background="@color/colorGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fixed Route"
+
+            />
+
+
+
+        <!--<RelativeLayout
+            android:layout_weight="1"
+            android:id="@+id/relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">-->
+
+        <Button
+            android:foreground="?attr/selectableItemBackground"
+
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:animateLayoutChanges="true"
+            android:id="@+id/btndynamicRoute"
+            android:fontFamily="serif"
+            android:textColor="#000000"
+            android:background="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dynamic Route"
+            android:gravity="center"
+            />
+        <!--</RelativeLayout>-->
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        android:id="@+id/bottom_sheet"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="SELECT AN ITEM"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp" />
+        <LinearLayout
+            android:background="@android:color/transparent"
+            android:layout_marginRight="5dp"
+            android:weightSum="2"
+            android:id="@+id/linearbtns"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:animateLayoutChanges="true"
+                android:id="@+id/btnfixRsdoute"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:fontFamily="serif"
+                android:background="#21e208"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fixed Route"
+
+                />
+
+
+
+            &lt;!&ndash; <RelativeLayout
+                 android:visibility="gone"
+                 android:layout_weight="1"
+                 android:id="@+id/relative_layout"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">&ndash;&gt;
+
+            <Button
+                android:foreground="?attr/selectableItemBackground"
+
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:animateLayoutChanges="true"
+                android:id="@+id/btndynamicRosute"
+                android:fontFamily="serif"
+                android:textColor="#000000"
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dynamic Route"
+                android:gravity="center"
+                />
+            &lt;!&ndash;  </RelativeLayout>&ndash;&gt;
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+-->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        android:id="@+id/bottom_sheet"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:layout_marginRight="5dp"
+            android:id="@+id/linear"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="Kilometer= 5"/>
+
+            <View
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrey"
+                />
+
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Fare = 35"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@android:color/transparent"
+            android:id="@+id/linearbtns"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:foreground="?attr/selectableItemBackground"
+
+                android:animateLayoutChanges="true"
+                android:id="@+id/btnfixRsdoute"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:fontFamily="serif"
+                android:background="#21e208"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Rickshaw"
+
+                />
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--
+</LinearLayout>-->
+    </android.support.design.widget.CoordinatorLayout>

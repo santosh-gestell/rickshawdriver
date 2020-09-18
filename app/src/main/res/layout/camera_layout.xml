@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+    <LinearLayout
+
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:hint="License Number"
+            android:inputType="text"
+            android:fontFamily="serif"
+            android:background="@drawable/rounded_edittext"
+            />
+
+        <RelativeLayout
+            android:id="@+id/layoutExpiryDate"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext">
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/edtExprityDate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:hint="Expiry Date"
+                android:inputType="text"
+                android:fontFamily="serif"
+                android:editable="false"
+                android:clickable="false"
+                android:background="@null"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageIconCalender"
+                android:layout_marginRight="10dp"
+                />
+            <ImageView
+                android:id="@+id/imageIconCalender"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_calender"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:padding="5dp" />
+
+        </RelativeLayout>
+
+
+            <TextView
+                android:fontFamily="serif"
+                android:layout_marginTop="10dp"
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Take a Photo of your Driver License"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center_horizontal"
+                />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+
+            android:orientation="vertical">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+               >
+
+
+
+
+                <ImageView
+                    android:id="@+id/img_document"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/demoimg"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:visibility="invisible"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:theme="@style/AppTheme.GreenAccent"
+                    />
+            </RelativeLayout>
+
+
+            <!--<ImageView
+
+                android:id="@+id/img_document"
+                android:layout_marginTop="10dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/demoimg"
+                />-->
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click To Add Photo"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textColor="@color/colorGreen"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnClick"
+                android:fontFamily="serif"
+                android:background="@color/colorGreen"
+                android:textColor="@color/colorWhite"
+                android:text="@string/clicktoadd"
+                />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ll"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make Sure Vehicle Insurance Number is Readable"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/retake"
+                    android:background="@color/colorGrey"
+                    android:textColor="@color/colorWhite"
+                    android:padding="12dp"
+                    android:id="@+id/btnRetake"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSave"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:padding="12dp"
+                    android:background="@color/colorGreen"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+            </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

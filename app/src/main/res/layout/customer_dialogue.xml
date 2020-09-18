@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:padding="2dp"
+            android:id="@+id/ll"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="serif"
+                android:id="@+id/txtTile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/customerdetail"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:padding="5dp"
+            android:id="@+id/imgclose"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/close"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        card_view:cardCornerRadius="0dp"
+        card_view:contentPadding="5dp">
+
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="8dp">
+       <EditText
+           android:fontFamily="serif"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/edtMob"
+           android:inputType="number"
+           android:maxLength="10"
+           android:hint="@string/entermobileno"
+
+           />
+</com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:fontFamily="serif"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_submit"
+                android:text="@string/startRide"
+                android:background="@color/colorGreen"
+                android:textColor="@color/colorWhite"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

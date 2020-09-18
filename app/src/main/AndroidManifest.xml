@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tretakalp.Rikshaapp">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION"/>
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
+
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:name=".Other.AppController"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/MyMaterialTheme">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <!--
+          The API key for Google Maps-based APIs is defined as a string resource.
+          (See the file "res/values/google_maps_api.xml").
+          Note that the API key is linked to the encryption key used to sign the APK.
+          You need a different API key for each encryption key, including the release key that is used to
+          sign the APK for publishing.
+          You can define the keys for the debug and release targets in src/debug/ and src/release/.
+     -->
+       <!-- <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA59KfuT3Kbs4Wl3WJRVgKPO1aaawmEMT4"/> -->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBgxV8HZG2nmFXHb5iYHHxfeJJCsFGZqPA"/>
+
+
+
+        <activity android:name=".Activity.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.SignUpActivity"  android:screenOrientation="portrait"  android:windowSoftInputMode="stateHidden" android:exported="false"/>
+        <activity android:name=".Activity.LoginActivity"  android:screenOrientation="portrait"  android:windowSoftInputMode="stateHidden|adjustPan"  android:exported="false"/>
+        <activity android:name=".Activity.DocumentActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" android:exported="false"/>
+        <activity android:name=".Activity.CameraActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustResize" android:exported="false"/>
+        <activity android:name=".Activity.BadgeNumberActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" android:exported="false"/>
+        <activity android:name=".Activity.BankDetailActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" android:exported="false"/>
+        <activity android:name=".Activity.ProfilePicActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" android:exported="false"/>
+        <activity android:name=".Activity.LegalActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" android:exported="false"/>
+        <activity android:name=".Activity.MapActivity"  android:keepScreenOn="true"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" android:exported="false"/>
+        <activity android:name=".Activity.ProfileActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" android:exported="false"/>
+        <activity android:name=".Activity.EditProfileActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan"  android:exported="false"/>
+        <activity android:name=".Activity.LanguageActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan"  android:exported="false"/>
+        <activity android:name=".Activity.DocumentActivityNew"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" android:exported="false"/>
+        <activity android:name=".Activity.TripIdActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" android:exported="false"/>
+        <activity android:name=".Activity.RideSummary"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" android:exported="false"/>
+        <activity android:name=".Activity.PaymentActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan" android:exported="false"/>
+        <activity android:name=".Activity.ChangePasswordActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:exported="false"/>
+        <activity android:name=".Activity.EarningActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:exported="false"/>
+        <activity android:name=".Activity.ReferEarningActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:exported="false"/>
+        <activity android:name=".Activity.TopicTwo"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:exported="false"/>
+        <activity android:name=".Activity.IssueActivity"  android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activity.PushNotificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:exported="false"/>
+        <activity android:name=".Activity.ChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:exported="false"/>
+        <activity android:name=".Activity.TripNotification" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:exported="false"/>
+        <activity android:name=".Activity.ForgotPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:exported="false"/>
+
+
+        <!--AIzaSyA59KfuT3Kbs4Wl3WJRVgKPO1aaawmEMT4-->
+
+        <!--<receiver
+            android:name=".Receiver.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>-->
+
+        <!-- Firebase Notifications -->
+        <service android:name=".Service.MyFirebaseMessagingServiceNew"  android:exported="false">
+
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+
+        </service>
+        <service android:name=".Service.MyFirebaseInstanceIDService" android:exported="false">
+
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+
+        </service>
+        <service
+            android:name="com.tretakalp.Rikshaapp.Service.LocationService"
+            android:exported="false"
+            >
+        </service>
+
+        <receiver android:name=".Receiver.CloseNotification" android:exported="false"/>
+        <receiver android:name=".Receiver.AcceptNotificationReceiver" android:exported="false"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home1"
+            android:icon="@mipmap/ic_lock"
+            android:title="@string/nav_Home" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/profile"
+            android:title="@string/nav_profile" />
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@drawable/trip_history"
+            android:title="@string/nav_tripshistory" />
+        <item
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/earnings"
+            android:title="@string/nav_Earnings" />
+        <item
+            android:id="@+id/nav_paymentdetails"
+            android:icon="@drawable/payment_details"
+            android:title="@string/nav_PaymentDetails" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/refer_earn"
+            android:title="@string/nav_ReferEarn" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/account_setting"
+            android:title="@string/nav_AccountSetting" />
+
+        <item
+            android:id="@+id/nav_incentiveandnoti"
+            android:icon="@drawable/bell"
+            android:title="@string/nav_incentiveAndNoti" />
+
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/report_issues"
+            android:title="@string/nav_report" />
+
+
+
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="@string/nav_about_us" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help"
+            android:title="@string/nav_help" />
+
+
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/sign_out"
+            android:title="@string/nav_signout" />
+
+        <group android:checkableBehavior="single"
+            android:id="@+id/group1"
+            >
+
+            <item
+                android:id="@+id/nav_legal"
+                android:title="@string/nav_legal" />
+
+
+        </group>
+
+
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:background="@color/colorWhite"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="match_parent">
+
+
+<TextView
+    android:fontFamily="serif"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Current Language/भाषा"
+    android:textStyle="bold"
+    android:textColor="@color/colorBlack"
+
+    />
+
+            <RelativeLayout
+                android:id="@+id/rdl"
+
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:fontFamily="serif"
+                    android:id="@+id/txtlang"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English (US)"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:textSize="14sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_dl"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tick"
+
+                    android:layout_alignParentRight="true"
+                    />
+
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Language/भाषा बदला"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="serif"
+                />
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spinner_lang"
+                >
+            </Spinner>
+
+            <LinearLayout
+                android:layout_marginTop="80dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:fontFamily="serif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_cancel"
+                    android:text="Cancel"
+                    android:background="@color/colorGrey"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <Button
+                    android:fontFamily="serif"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_save"
+                    android:text="Save"
+                    android:background="@color/colorGreen"
+                    android:textColor="@color/colorWhite"
+                    />
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
